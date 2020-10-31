@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    
+}
+
+
+@if(ViewBag.logedIn == true)
+{
+<div class="embed-responsive embed-responsive-16by9" style="height: 700px;margin-top:67px;">
+    <iframe allow="microphone;"
+            width="500"
+            height="800"
+            src="https://console.dialogflow.com/api-client/demo/embedded/09d8d121-b7b9-4e2a-a269-6c31273ca0a8"></iframe>
+</div>
+}
+else {
+
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">Welcom to my new chatBot</h1>
+                <h2 class="masthead-subheading mb-0">This is the best chatBot you could use</h2>
+                <a href="~/home/about" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+
+}
+
+
